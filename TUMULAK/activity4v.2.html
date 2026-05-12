@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>activity4</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 50%;
+                max-width: 600px;
+            }
+
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            td {
+                padding: 12px;
+                text-align: left;
+                vertical-align: middle;
+            }
+
+            label {
+                font-weight: bold;
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            select {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                margin-right: 5px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                margin-right: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button[type="reset"] {
+                background-color: #f44336;
+            }
+
+            button:hover {
+                opacity: 0.9;
+            }
+
+            button[type="reset"]:hover {
+                opacity: 0.8;
+            }
+
+            .form-row {
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="post">
+            <h1>User Information Form</h1>
+            <table>
+                <tr class="form-row">
+                    <td><label for="firstName">First Name:</label></td>
+                    <td><input type="text" id="firstName" required></td>
+                </tr>
+                <tr class="form-row">
+                    <td><label for="lastName">Last Name:</label></td>
+                    <td><input type="text" id="lastName" required></td>
+                </tr>
+                <tr class="form-row">
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age"></td>
+                </tr>
+                <tr class="form-row">
+                    <td><label for="Gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="Gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="Gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="Gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr class="form-row">
+                    <td><label for="Hobbies">Fav VideoGames:</label></td>
+                    <td>
+                        <input type="checkbox" id="hobby1" name="hobby" value="hollowknight">
+                        <label for="hobby1">Hollow Knight</label><br>
+                        <input type="checkbox" id="hobby2" name="hobby" value="minecraft">
+                        <label for="hobby2">Minecraft</label><br>
+                        <input type="checkbox" id="hobby3" name="hobby" value="DOTA">
+                        <label for="hobby3">DOTA</label><br>
+                        <input type="checkbox" id="hobby4" name="hobby" value="tekken">
+                        <label for="hobby4">Tekken</label><br>
+                        <input type="checkbox" id="hobby5" name="hobby" value="botw">
+                        <label for="hobby5">Breath of the Wild</label><br>
+                    </td>
+                </tr>
+                <tr class="form-row">
+                    <td><label for="year-level">Year Level:</label></td>
+                    <td>
+                        <select id="year-level" name="year-level">
+                            <option value="1st-year">1st Year</option>
+                            <option value="2nd-year">2nd Year</option>
+                            <option value="3rd-year">3rd Year</option>
+                            <option value="4th-year">4th Year</option> 
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

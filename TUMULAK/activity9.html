@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+            function myfunction(){
+                let txt;
+                let fullname = prompt("Full name: ", "Enter your full name here");
+                if(fullname == null || fullname == ""){
+                    txt = "This field is required!"
+                }else{
+                    txt = "Hello, " + fullname + "! How are you today?"
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+    </script>
+    </head>
+    <body>
+        <h2>Javascript prompt</h2>
+        <button onclick="myfunction()">Click here!</button>
+        Click me to display Date and Time</button>
+        <p id="demo"></p>
+    </body>
+</html>
